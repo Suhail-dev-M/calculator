@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator tests</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .report-wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
+    #summary { font-size: 1.2rem; font-weight: 700; }
+    #summary.good { color: #4ade80; } #summary.bad { color: #ff6b6b; }
+    #report ul { list-style: none; padding: 0; margin: 0 0 16px; font: .85rem/1.6 ui-monospace, Consolas, monospace; }
+    #report li.pass { color: #8b93a7; } #report li.fail { color: #ff6b6b; font-weight: 700; } #report li.skip { color: #e0b341; }
+    #report h2 { font-size: 1rem; margin: 20px 0 6px; }
+    #sandbox { width: 360px; margin: 24px 0; border: 1px dashed #8b93a7; }
+  </style>
+</head>
+<body data-autostart="false">
+  <div class="report-wrap">
+    <h1>Calculator test suite</h1>
+    <p id="summary">Running...</p>
+    <div id="report"></div>
+    <p>Sandbox (the real app is mounted here at 360px wide for the UI tests):</p>
+    <div id="sandbox"></div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/scientific.js"></script>
+  <script src="../js/parser.js"></script>
+  <script src="../js/history.js"></script>
+  <script src="../js/memory.js"></script>
+  <script src="../js/calculator.js"></script>
+  <script src="../js/keyboard.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="harness.js"></script>
+  <script src="unit-tests.js"></script>
+  <script src="integration-tests.js"></script>
+  <script src="browser-runner.js"></script>
+</body>
+</html>
